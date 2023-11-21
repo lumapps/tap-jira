@@ -1819,9 +1819,15 @@ class IssueStream(JiraStream):
                 Property("customfield_10038", StringType),
                 Property("customfield_10039", StringType),
                 Property("customfield_10000", ArrayType(base_item_schema)),
+                Property("customfield_10141", StringType),        ## Version (tag)
                 Property("customfield_10042", StringType),
                 Property("customfield_10046", StringType),
-                Property("customfield_10047", StringType),
+                Property("customfield_10104", StringType),        ## Repo URL
+                Property("customfield_10074", base_item_schema),  ## POD
+                Property("customfield_10143", base_item_schema),  ## Severity
+                Property("customfield_10144", base_item_schema),  ## Criticality
+                Property("customfield_10159", base_item_schema),  ## RCA Public
+                Property("customfield_10160", base_item_schema),  ## RCA Interne
                 Property(
                     "environment",
                     ObjectType(
