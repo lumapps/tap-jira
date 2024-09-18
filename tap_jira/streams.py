@@ -1828,6 +1828,7 @@ class IssueStream(JiraStream):
                 Property("customfield_10144", base_item_schema),  ## Criticality
                 Property("customfield_10159", base_item_schema),  ## RCA Public
                 Property("customfield_10160", base_item_schema),  ## RCA Interne
+                Property("customfield_10155", base_item_schema),  ## Regression
                 Property(
                     "environment",
                     ObjectType(
