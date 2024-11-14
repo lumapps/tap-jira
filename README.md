@@ -30,7 +30,7 @@ Built with the [Meltano Tap SDK](https://sdk.meltano.com) for Singer Taps.
 | stream_map_config   |  False   | None    | User-defined config values to be used within map expressions.                                                                               |
 | flattening_enabled  |  False   | None    | 'True' to enable schema flattening and automatically expand nested properties.                                                              |
 | flattening_max_depth|  False   | None    | The max depth to flatten schemas.                                                                                                           |
-
+| projects            | False    | None    | The jira projects to sync issues from. If None, select all projects                                                                         |
 The auth setting works either with access token or username/password, set by the following configs:
 
 Auth with access token:
